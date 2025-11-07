@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>行程規劃</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav__link">首頁</a>
+    <a href="theme.html" class="nav__link">旅遊主題</a>
+    <a href="apply.html" class="nav__link">行程規劃</a>
+    <a href="contact.html" class="nav__link">聯絡我們</a>
+  </nav>
+
+  <div class="container">
+    <h1>行程規劃表</h1>
+    <h3>請填寫以下資料，我們將在24小時內為您生成初步行程建議與報價。</h3>
+
+    <form action="thankyou.html" method="get">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+
+      <label for="email">電子郵件：</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">電話：</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912-345-678" required>
+
+<label for="animal">旅遊目的地：</label>
+<select id="animal" name="animal" required>
+  <option value="">請選擇目的地</option>
+  <optgroup label="亞洲">
+    <option value="日本">日本</option>
+    <option value="韓國">韓國</option>
+    <option value="香港">香港</option>
+  </optgroup>
+  <optgroup label="歐洲">
+    <option value="義大利">義大利</option>
+    <option value="法國">法國</option>
+    <option value="英國">英國</option>
+  </optgroup>
+  <optgroup label="美洲">
+    <option value="美國">美國</option>
+    <option value="加拿大">加拿大</option>
+  </optgroup>
+  <optgroup label="其他特殊目的地">
+  <option value="南極">南極</option>
+  <option value="北極">北極</option>
+  <option value="杜拜">杜拜</option>
+  </optgroup>
+</select>
+
+      <p>預算區間：</p>
+      <label><input type="radio" name="house" value="apartment"> $5萬內</label>
+      <label><input type="radio" name="house" value="house"> $5萬-$10萬</label>
+      <label><input type="radio" name="house" value="other"> $10萬以上</label>
+
+      <p>旅行風格（可複選）：</p>
+      <label><input type="checkbox" name="experience" value="dog"> 🕌 歷史文化深度遊</label>
+      <label><input type="checkbox" name="experience" value="cat"> 🌲 戶外自然探險之旅</label>
+      <label><input type="checkbox" name="experience" value="none"> 🏖️ 海島陽光療癒行</label>
+      <label><input type="checkbox" name="experience" value="none"> 🛍️ 城市購物時尚遊</label>
+      <label><input type="checkbox" name="experience" value="none"> 🍜 舌尖上的饗宴</label>
+      <label><input type="checkbox" name="experience" value="none"> 👨‍👩‍👧‍👦 歡樂親子家庭遊</label>
+      <label><input type="checkbox" name="experience" value="none"> 🚌 經典入門觀光團</label>
+      <label><input type="checkbox" name="experience" value="none"> 🍷 藝術與美學巡禮</label>
+      <label><input type="checkbox" name="experience" value="none"> 💼 豪華頂級體驗遊</label>
+      
+      <label for="duration">旅遊天數 (夜):</label>
+      <input type="number" id="duration" name="duration" min="3" max="60" placeholder="例如：7 (代表 7 天 6 夜)" required>
+      <label for="travel-month">預計出發月份:</label>
+      <input type="month" id="travel-month" name="travel-month" required>
+      <label for="pax">同行人數:</label>
+      <input type="number" id="pax" name="pax" min="1" placeholder="例如：2 (情侶)" required>
+      <label for="notes">特殊需求與備註:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="例如：素食者、慶祝週年紀念日、需輪椅友善交通等..."></textarea>
+
+      <div class="btn-group">
+        <button class="btn" type="submit">提交申請</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 夢想行程規劃中心 | 祝您旅途愉快！
+  </footer>
+</body>
+</html>

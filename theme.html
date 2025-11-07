@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅遊主題</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav__link">首頁</a>
+    <a href="theme.html" class="nav__link">旅遊主題</a>
+    <a href="apply.html" class="nav__link">行程規劃</a>
+    <a href="contact.html" class="nav__link">聯絡我們</a>
+  </nav>
+
+  <div class="container">
+    <h1>探索您的下一個主題時刻</h1>
+    <p style="text-align:center;"> 瀏覽我們的熱門主題，找到您的旅行靈感。</p>
+    <div class="gallery-grid">
+        <div class="theme-card">
+            <img src="/image/theme1.jpg" alt="歷史文化深度遊" class="theme-img" onclick="document.getElementById('info1').showModal()">
+            <p>🕌 歷史文化深度遊</p>
+        </div>
+
+        <dialog id="info1" class="theme-dialog">
+            <h2>🕌 歷史文化深度遊</h2>
+            <img src="/image/theme1.jpg" alt="歷史文化深度遊" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>沉浸於古老文明的智慧，探索歷史遺跡，體驗地方傳統工藝與藝術。</p>
+                <h3>適合對象：</h3>
+                <p>歷史愛好者、博物館迷、追求知識深度，不介意長途交通的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>9-14 天</p>
+                <h3>預算考量：</h3>
+                <p>中等至中高（主要花費在導覽、門票、文化體驗課程）。</p>
+                <h3>景點範例：</h3>
+                <p>羅馬競技場、京都古寺與茶道體驗、祕魯馬丘比丘。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+
+        <div class="theme-card">
+            <img src="/image/theme2.jpg" alt="戶外自然探險之旅" class="theme-img" onclick="document.getElementById('info2').showModal()">
+            <p>🌲 戶外自然探險之旅</p>
+        </div>
+        <dialog id="info2" class="theme-dialog">
+            <h2>🌲 戶外自然探險之旅</h2>
+            <img src="/image/theme2.jpg" alt="戶外自然探險之旅" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>深入大自然，挑戰自我，享受壯麗景觀，體驗健行、潛水等戶外活動。</p>
+                <h3>適合對象：</h3>
+                <p>熱愛運動、體力充沛、喜歡攝影，對住宿要求相對簡單的探險家。</p>
+                <h3>建議天數：</h3>
+                <p>7-10 天</p>
+                <h3>預算考量：</h3>
+                <p>中高（主要花費在特殊活動裝備租賃、國家公園門票、專業嚮導）。</p>
+                <h3>景點範例：</h3>
+                <p>冰島環島、紐西蘭峽灣健行、瑞士阿爾卑斯山滑雪。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+
+        <div class="theme-card">
+            <img src="/image/theme3.jpg" alt="海島陽光療癒行" class="theme-img" onclick="document.getElementById('info3').showModal()">
+            <p>🏖️ 海島陽光療癒行</p>
+        </div>
+        <dialog id="info3" class="theme-dialog">
+            <h2>🏖️ 海島陽光療癒行</h2>
+            <img src="/image/theme3.jpg" alt="海島陽光療癒行" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>徹底放鬆身心，享受陽光、沙灘、海洋，在度假村內輕鬆充電。</p>
+                <h3>適合對象：</h3>
+                <p>尋求高度放鬆、蜜月旅行、或喜歡水上活動，對行程彈性要求高的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>5-7 天</p>
+                <h3>預算考量：</h3>
+                <p>中等到奢華（主要取決於住宿等級，如私人Villa或頂級度假村）。</p>
+                <h3>景點範例：</h3>
+                <p>峇里島海景 Spa、希臘聖托里尼。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme4.jpg" alt="城市購物時尚遊" class="theme-img" onclick="document.getElementById('info4').showModal()">
+            <p>🛍️ 城市購物時尚遊</p>
+        </div>
+        <dialog id="info4" class="theme-dialog">
+            <h2>🛍️ 城市購物時尚遊</h2>
+            <img src="/image/theme4.jpg" alt="城市購物時尚遊" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>追逐國際潮流，探索城市精品店、設計師品牌，體驗都市的活力與脈動。</p>
+                <h3>適合對象：</h3>
+                <p>時尚愛好者、樂於探索新興街區、注重交通便利性和城市娛樂的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>4-6 天</p>
+                <h3>預算考量：</h3>
+                <p>高（主要花費在購物及精華地段的住宿）。</p>
+                <h3>景點範例：</h3>
+                <p>東京銀座/表參道、紐約第五大道。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme5.jpg" alt="舌尖上的饗宴" class="theme-img" onclick="document.getElementById('info5').showModal()">
+            <p>🍜 舌尖上的饗宴</p>
+        </div>
+        <dialog id="info5" class="theme-dialog">
+            <h2>🍜 舌尖上的饗宴</h2>
+            <img src="/image/theme5.jpg" alt="舌尖上的饗宴" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>以「吃」為導向，探索地方特色美食、米其林餐廳、參加烹飪課程。</p>
+                <h3>適合對象：</h3>
+                <p>美食家、喜歡嘗試當地小吃、願意花時間排隊等候的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>5-7 天</p>
+                <h3>預算考量：</h3>
+                <p>中高（優質餐廳花費高，但能帶來極致體驗）。</p>
+                <h3>景點範例：</h3>
+                <p>日本築地市場、法國里昂美食之都。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme6.jpg" alt="歡樂親子家庭遊" class="theme-img" onclick="document.getElementById('info6').showModal()">
+            <p>👨‍👩‍👧‍👦 歡樂親子家庭遊</p>
+        </div>
+        <dialog id="info6" class="theme-dialog">
+            <h2>👨‍👩‍👧‍👦 歡樂親子家庭遊</h2>
+            <img src="/image/theme6.jpg" alt="歡樂親子家庭遊" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>行程以孩子的興趣和安全為優先考量，創造美好的家庭共同回憶。</p>
+                <h3>適合對象：</h3>
+                <p>帶著幼兒或青少年出遊的家庭，重視交通時間短、活動多元、住宿便利性。</p>
+                <h3>建議天數：</h3>
+                <p>6-8 天</p>
+                <h3>預算考量：</h3>
+                <p>中等（主要花費在主題樂園門票、家庭房型住宿）。</p>
+                <h3>景點範例：</h3>
+                <p>迪士尼樂園、澳洲動物園互動體驗。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme7.jpg" alt="經典入門觀光團" class="theme-img" onclick="document.getElementById('info7').showModal()">
+            <p>🚌 經典入門觀光團</p>
+        </div>
+        <dialog id="info7" class="theme-dialog">
+            <h2>🚌 經典入門觀光團</h2>
+            <img src="/image/theme7.jpg" alt="經典入門觀光團" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>首次造訪該地區，不錯過所有最著名的「打卡」景點與地標。</p>
+                <h3>適合對象：</h3>
+                <p>首次出國者、長輩團、喜歡行程清晰且有導遊帶領，追求高效率的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>7-10 天</p>
+                <h3>預算考量：</h3>
+                <p>中等（通常為跟團價格，價格較透明）。</p>
+                <h3>景點範例：</h3>
+                <p>歐洲多國經典路線、美西大峽谷。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme8.jpg" alt="藝術與美學巡禮" class="theme-img" onclick="document.getElementById('info8').showModal()">
+            <p>🍷 藝術與美學巡禮</p>
+        </div>
+        <dialog id="info8" class="theme-dialog">
+            <h2>🍷 藝術與美學巡禮</h2>
+            <img src="/image/theme8.jpg" alt="藝術與美學巡禮" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>專注於藝術、設計、建築和攝影，從美學角度感受城市氛圍。</p>
+                <h3>適合對象：</h3>
+                <p>藝術工作者、設計師、對建築或攝影有興趣，喜歡探索特色美術館的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>5-7 天</p>
+                <h3>預算考量：</h3>
+                <p>中高（主要花費在展覽門票、特色設計旅店住宿）。</p>
+                <h3>景點範例：</h3>
+                <p>巴黎羅浮宮、紐約大都會博物館。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    
+        <div class="theme-card">
+            <img src="/image/theme9.jpg" alt="豪華頂級體驗遊" class="theme-img" onclick="document.getElementById('info9').showModal()">
+            <p>💼 豪華頂級體驗遊</p>
+        </div>
+        <dialog id="info9" class="theme-dialog">
+            <h2>💼 豪華頂級體驗遊</h2>
+            <img src="/image/theme9.jpg" alt="豪華頂級體驗遊" class="dialog-img">
+            <div class="detail-content">
+                <h3>核心宗旨：</h3>
+                <p>享受五星級或以上服務，追求最高規格的舒適、隱私與專屬體驗。</p>
+                <h3>適合對象：</h3>
+                <p>追求高隱私、時間寶貴、對服務品質零容忍、預算充足的旅人。</p>
+                <h3>建議天數：</h3>
+                <p>彈性，可長可短</p>
+                <h3>預算考量：</h3>
+                <p>極高（包含頭等艙、五星級套房、私人管家、米其林餐廳）。</p>
+                <h3>景點範例：</h3>
+                <p>豪華郵輪環遊世界、私人島嶼度假。</p>
+                <button class="btn" onclick="this.closest('dialog').close()">關閉</button>
+            </div>
+        </dialog>
+    </div>
+  </div>
+  <footer>
+    © 2025 夢想行程規劃中心 | 祝您旅途愉快！
+  </footer>
+</body>
+</html>
